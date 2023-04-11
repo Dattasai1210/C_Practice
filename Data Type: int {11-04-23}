@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    int b=-20;
+    unsigned int c=30;
+    long int d=40;
+    printf("Value of a:%d\n",a);
+    printf("Value of b:%d\n",b);
+    printf("Value of c:%u\n",c);
+    printf("Value of d:%ld",d);
+}
+
+Value of a:10
+Value of b:-20
+Value of c:30
+Value of d:40
