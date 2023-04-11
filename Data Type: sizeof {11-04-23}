@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int a=sizeof(int);
+    char b=sizeof(char);
+    double c=sizeof(double);
+    float d=sizeof(float);
+    printf("Data type of Int:%d\n",a);
+    printf("Data type of Char:%d\n",b);
+    printf("Data type of Double:%.lf\n",c);
+    printf("Data type of Float:%.f",d);
+}
+
+Data type of Int:4
+Data type of Char:1
+Data type of Double:8
+Data type of Float:4
