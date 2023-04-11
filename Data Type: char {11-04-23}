@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int a='a';
+    int c=99;
+    printf("Value of a:%c\n",a);
+    printf("Value of c:%c",c);
+    return 0;
+}
+
+Value of a:a
+Value of c:c
