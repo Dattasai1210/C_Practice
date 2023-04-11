@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    float a=10.5;
+    float b=-20.5;
+    printf("Value of a:%.2f\n",a);
+    printf("Value of b:%.2f",b);
+    return 0;
+}
+
+Value of a:10.50
+Value of b:-20.50
