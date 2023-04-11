@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+int a=5;    //instalized Global variable stored in DS
+int b;  //uninstalized Global variable stored in BSS
+int main()
+{
+    static int c=10;    //instalized Global variable stored in DS
+    static int d=20;    //instalized Global variable stored in BSS
+    int e=25;   //Auto variable stored in stack
+    int *ptr=(int*)malloc(sizeof(int)); //Heap
+    printf("Value of a and c:%d %d\n",a,c);
+    printf("Enter value of b:");
+    scanf("Value of b:%d\n",&b);
+    printf("Value of d:%d\n",d);
+    printf("Value of e:%d\n",e);
+    printf("Size of int:%ld",sizeof(int));
+    return 0;
+}
+
+Value of a and c:5 10
+Enter value of b:15
+Value of d:20
+Value of e:25
+Size of int:4
