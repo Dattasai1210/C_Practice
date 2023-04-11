@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    double a=102345.67;
+    double b=-121.121212;
+    printf("Value of a:%lf\n",a);
+    printf("Value of b:%lf",b);
+    return 0;
+}
+
+Value of a:102345.670000
+Value of b:-121.121212
