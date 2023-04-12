@@ -1,0 +1,64 @@
+#include<stdio.h>
+#define add(x,y) x+y //using as functions
+int main()
+{
+    printf("Addition is:%d",add(4,5));
+    return 0;
+}
+
+Output:Addition is:9
+
+#include<stdio.h>
+#define value 10
+int main()
+{
+    printf("value is:%d",value);
+    return 0;
+}
+
+Output:value is:10
+
+#include<stdio.h>
+#define greater(x,y) if(x>y)\   //using slash operator(writing multiple lines)
+    printf("%d is greater than %d",x,y);\
+else\
+    printf("%d is lesser than %d",x,y);\
+    
+int main()
+{
+    greater(1,4);
+    return 0;
+}
+
+Output:1 is lesser than 4
+
+#include<stdio.h>
+#define add(x,y) x+y
+int main()
+{
+    printf("result of expression a*b+c is:%d",5 * add(4,3));  //expansion and evaluation
+    return 0;
+}
+
+Output:result of expression a*b+c is:23
+
+#include<stdio.h>
+int main()
+{
+    printf("Date:%s\n",__DATE__);
+    printf("Time:%s",__TIME__);
+    return 0;
+}
+
+Output:Date:Apr 12 2023
+Time:12:44:25
+
+#include<stdio.h>
+#define STRING "%s\n" //defining in marcos
+#define DATA "Welcome to Thundersoft"
+
+int main()
+{
+   printf(STRING,DATA);
+}
+Output:Welcome to Thundersoft
