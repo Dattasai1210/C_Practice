@@ -38,3 +38,30 @@ int increment()
 }
 
 Output:3
+
+#include<stdio.h>
+int fun()
+{
+    static int i;
+    i++;
+    printf("%d\n",i);
+    i++;
+    printf("%d\n",i);
+    int j=5;
+    j++;
+    printf("%d\n",j);
+    return 0;
+}
+int main()
+{
+    fun();
+    fun();
+}
+
+Output:
+1
+2
+6
+3
+4
+6
