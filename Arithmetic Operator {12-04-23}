@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Enter value of a:");
+    scanf("%d",&a);
+    printf("Enter value of b:");
+    scanf("%d",&b);
+    printf("a+b:%d\n",a+b); //addition
+    printf("a-b:%d\n",a-b); //subtraction
+    printf("a*b:%d\n",a*b); //multiplication
+    printf("a/b:%d\n",a/b); //division
+    printf("a%%b:%d\n",a%b);  //modules
+}
+
+Output:
+Enter value of a:10
+Enter value of b:5
+a+b:15
+a-b:5
+a*b:50
+a/b:2
+a%b:0
+
+#include<stdio.h>
+int main()
+{
+    int a=2,b=3,c=4,d=5;
+    printf("a*b/c:%d\n",a*b/c); 
+    printf("a+b-c:%d\n",a+b-c);
+    printf("a+b*d-c%%a:%d",a+b*d-c%a);
+    return 0;
+}
+
+Output:
+a*b/c:1
+a+b-c:1
+a+b*d-c%a:17
