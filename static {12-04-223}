@@ -65,3 +65,28 @@ Output:
 3
 4
 6
+
+#include<stdio.h>
+int increment();
+extern int count;
+int count;
+int main()
+{
+    int value;
+    value=increment();
+    value=increment();
+    value=increment();
+    count=count+3;
+    value=count;
+    printf("%d",value);
+    return 0;
+}
+int increment()
+
+{
+    count++;
+    return count;
+}
+
+Output:
+6
