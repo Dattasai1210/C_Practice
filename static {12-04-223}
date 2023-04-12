@@ -1,0 +1,40 @@
+#include<stdio.h>
+int increment();
+int main()
+{
+    int value;
+    value=increment();
+    value=increment();
+    value=increment();
+    printf("%d",value);
+    return 0;
+}
+int increment()
+{
+    int count=0;
+    count=count+1;
+    return count;
+}
+
+Output:1
+
+#include<stdio.h>
+int increment();
+static int count; // globally declared
+int main()
+{
+    int value;
+    value=increment();
+    value=increment();
+    value=increment();
+    printf("%d",value);
+    return 0;
+}
+int increment()
+{
+    static int count;//locally declared
+    count=count+1;
+    return count;
+}
+
+Output:3
