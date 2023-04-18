@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int num,n,getbit;
+    printf("Enter Number:");
+    scanf("%d",&num);
+    printf("Enter nth bit:");
+    scanf("%d",&n);
+    getbit=(num>>n)&1;
+    printf("The %d bit is set to %d",n,getbit);
+    return 0;
+}
+
+Output:
+Enter Number:12
+Enter nth bit:2
+The 2 bit is set to 1
