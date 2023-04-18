@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter Number:");
+    scanf("%d",&n);
+    if(n & 1)
+    {
+        printf("LSB of %d is a set",n);
+    }
+    else
+    {
+        printf("LSB of %d is unset",n);
+    }
+    return 0;
+}
+
+Output:
+Enter Number:12
+LSB of 12 is unset
