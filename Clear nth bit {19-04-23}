@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+        int n=12,nth=3,clear;
+        clear=n&(~(1<<nth));
+        printf("Number before clear %d bit:%d\n", nth,n);
+        printf("Number after clear %d bit:%d", nth,clear);
+}
+
+Output:
+Number before clear 3 bit:12
+Number after clear 3 bit:4
