@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+        int n=12,nth=3,toggle;
+        toggle=n^(1<<nth);
+        printf("Number before toggle %d bit:%d\n", nth,n);
+        printf("Number after toggle %d bit:%d", nth,toggle);
+}
+
+Output:
+Number before toggle 3 bit:12
+Number after toggle 3 bit:4
