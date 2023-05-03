@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    int b=20;
+    int *const ptr=&b;
+    *ptr=30;
+    ptr=&a;
+    printf("%ls",ptr);
+}
