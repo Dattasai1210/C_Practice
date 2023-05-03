@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+    int a=20;
+    const int *ptr=&a;
+    *ptr=30;
+    printf("%d",*ptr);
+}
