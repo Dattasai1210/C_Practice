@@ -1,0 +1,30 @@
+#include<stdio.h>
+enum ele {b=100};
+int main()
+{
+    int a[]={1,2,3,4,5,101};
+    int max=a[0];
+    int i,flag;
+    for(i=0;i<6;i++)
+    {
+        if(a[i]>max)
+        {
+            max=a[i];
+        }
+    }
+    printf("Max Ele:%d\n",max);
+    for(i=0;i<6;i++)
+    {
+        flag=0;
+        if(b==a[i])
+        {
+            printf("100 is present");
+            flag=1;
+            break;
+        }
+    }
+    if(flag==0)
+    {
+        printf("100 is not present");
+    }
+}
