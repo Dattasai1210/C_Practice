@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    int b=20;
+    a^=b;
+    b^=a;
+    a^=b;
+    printf("After Swap:%d\n",a);
+    printf("After Swap:%d",b);
+}
