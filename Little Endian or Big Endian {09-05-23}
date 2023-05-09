@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    unsigned int n=0x01;
+    char *p=(char*)&n;
+    if(*p==1)
+    {
+        printf("Machine is Little endian\n");
+    }
+    else
+    {
+        printf("machine is Big Endian");
+    }
+}
