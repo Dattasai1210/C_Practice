@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100];
+    scanf("%[^\n]s",str);
+    int i,len=strlen(str),j,k;
+    char temp;
+    printf("%d\n",len);
+    j=len-3;
+    for(i=len-4,k=1;i<=j;i++,k++)
+    {
+        temp=str[len-k];
+        str[len-k]=str[i];
+        str[i]=temp;
+    }
+    puts(str);
+}
