@@ -1,0 +1,49 @@
+#include<stdio.h>
+#define BITS sizeof(int)*8
+int main()
+{
+    int n=12,n1=5,n2=10,flip,nth=2,nt=1,nh=3,msb,get,set,clear,toggle;
+    if(n&1)
+    {
+        printf("LSB is set:%d\n",n);
+    }
+    else
+    {
+        printf("LSB is not a set:%d\n",n);
+    }
+    msb=1<<(BITS-1);
+    if(n&msb)
+    {
+        printf("MSB is set:%d\n",n);
+    }
+    else
+    {
+        printf("MSB is not a set:%d\n",n);
+    }
+    flip=~n;
+    printf("Flipped number:%d\n",flip);
+    get=(n>>nth)&1;
+    printf("GEt nth Bit:%d\n",get);
+    set=(1<<nt)|n;
+    printf("Set nth Bit:%d\n",set);
+    clear=n&(~(1<<nh));
+    printf("Clear nth Bit:%d\n",clear);
+    toggle=n^(1<<nh);
+    printf("Toggle nth Bit:%d\n",toggle);
+    n1^=n2;
+    n2^=n1;
+    n1^=n2;
+    printf("After Swap n1:%d\n",n1);
+    printf("After Swap n2:%d\n",n2);
+}
+
+Output:
+LSB is not a set:12
+MSB is not a set:12
+Flipped number:-13
+GEt nth Bit:1
+Set nth Bit:14
+Clear nth Bit:4
+Toggle nth Bit:4
+After Swap n1:10
+After Swap n2:5
