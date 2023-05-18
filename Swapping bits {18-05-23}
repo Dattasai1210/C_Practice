@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int n=4,p,q;
+    printf("enter position 1:");
+    scanf("%d",&p);
+    printf("enter position 2:");
+    scanf("%d",&q);
+    if(((n&(1<<p)>>p))^((n&(1<<q))>>q))
+    {
+        n^=(1<<p);
+        n^=(1<<q);
+    }
+    printf("After Swapping:%d",n);
+}
