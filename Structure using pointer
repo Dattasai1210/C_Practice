@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+struct employee
+{
+    char a;
+    int p;
+};
+int main()
+{
+    struct employee *e;
+    e=malloc(sizeof(struct employee));
+    e->a='q';
+    e->p=10;
+    printf("%c\n%d",e->a,e->p);
+}
