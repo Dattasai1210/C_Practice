@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+   char str[] = "1100100001101";
+   int len = sizeof(str) / sizeof(str[0]);
+   int count = 0, max_count = 0, index = -1;
+
+   for (int i = 0; i < len; i++) {
+      if (str[i] == '0') {
+         count++;
+         if (count > max_count) {
+            max_count = count;
+            index = i - count + 1;
+         }
+      } else {
+         count = 0;
+      }
+   }
+
+   if (index == -1) {
+      printf("No '0' found.\n");
+   } else {
+      printf("Starting index of longest occurring '0': %d\nMax occurring '0': %d", index,max_count);
+   }
+
+   return 0;
+}
