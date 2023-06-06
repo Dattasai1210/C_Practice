@@ -1,0 +1,23 @@
+#include<stdio.h>
+void own(char *str,const char *str1)
+{
+    while(*str)
+    {
+        str++;
+    }
+    while(*str1)
+    {
+        *str=*str1;
+        str++;
+        str1++;
+    }
+    *str='\0';
+}
+int main()
+{
+    char str[50]="Welcome ";
+    const char *str1="To Thundersoft";
+    own(str,str1);
+    printf("string:%s\n",str);
+    return 0;
+}
