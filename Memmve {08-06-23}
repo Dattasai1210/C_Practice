@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+void mymemmove(void *dest,const void *src,size_t n)
+{
+    char *d=(char*)dest;
+    char *s=(char*)src;
+    if(s<d && s+n>d)
+    {
+        s+=n;
+        d+=n;
+        while(n--)
+        {
+        *(--d)=*(--s);
+        }
+    }
+    else
+    {
+        while(n--)
+        {
+             *d++=*s++;
+        }
+    }
+}
+int main()
+{
+    char src[]="Welcome!";
+    char dest[20];
+    mymemmove(dest,src,strlen(src)+1);
+    printf("Copied String:%s",dest);
+}
