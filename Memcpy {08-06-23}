@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+void mymemcpy(void *dest,const void *src,size_t n)
+{
+    char *d=(char*)dest;
+    const char *s=(char*)src;
+    while(n--)
+    {
+        *d++=*s++;
+    }
+}
+int main()
+{
+    char src[]="Welcome!";
+    char dest[20];
+    mymemcpy(dest,src,strlen(src)+1);
+    printf("Copied String:%s",dest);
+    return 0;
+}
