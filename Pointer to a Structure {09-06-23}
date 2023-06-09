@@ -1,0 +1,13 @@
+#include<stdio.h>
+struct st
+{
+    int i;
+    char a;
+}ref;
+int main()
+{
+    struct st *p=&ref;
+    p->i=10;
+    p->a='a';
+    printf("%d\n%c",p->i,p->a);
+}
