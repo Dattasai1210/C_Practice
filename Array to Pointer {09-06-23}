@@ -1,0 +1,14 @@
+#include<stdio.h>
+void array_Pointer(int *ptr,int size)
+{
+    for(int i=0;i<size;i++)
+    {
+        printf("%d",*(ptr+i));//accessing elements using pointer arthimethic
+    }
+}
+int main()
+{
+    int arr[]={1,2,3,4,5};//intializing and declaring elements
+    printf("Elements in array:");
+    array_Pointer(arr,sizeof(arr)/sizeof(arr[0]));//passing elements and size to the function
+}
