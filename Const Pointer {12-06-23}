@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    int *const ptr=&a; //fixed memory location
+    *ptr=20;
+    int b=5;
+    ptr=&b;
+    printf("%ls",ptr);
+}
