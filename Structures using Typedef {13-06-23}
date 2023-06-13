@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+typedef struct student
+{
+    char a[10];
+    int p;
+}S;
+int main()
+{
+    S *s;
+    s=malloc(sizeof(S));
+    strcpy(s->a,"Datta");
+    s->p=10;
+    printf("%s\n%d",s->a,s->p);
+}
